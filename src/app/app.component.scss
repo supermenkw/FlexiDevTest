@@ -1,0 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/starjedi-special-edition');
+
+.content {
+  padding: 20px 40px;
+  background-image: url('../assets/background.png');
+  height: 100%;
+}
+
+.header {
+  background-color: #000;
+  height: fit-content;
+  border-bottom: 1px solid #ffe81f;
+}
+
+.starwars-logo {
+  width: 150px;
+  cursor: pointer;
+}

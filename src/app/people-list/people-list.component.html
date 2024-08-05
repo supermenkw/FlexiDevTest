@@ -1,0 +1,19 @@
+<h2 class="character-title">characters</h2>
+<div class="container" style="padding: 20px;">
+  <app-loading-spinner [isLoading]="isLoading"></app-loading-spinner>
+
+  <mat-card *ngIf="!isLoading" class="character-list-card">
+    <mat-list class="character-list-container">
+      <mat-list-item class="character-list-item" *ngFor="let person of people" [routerLink]="['/people', person.url.split('/')[5]]">
+        <h2>{{ person.name }}</h2>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+
+  <mat-paginator
+    class="character-list-paginator"
+    [length]="totalPeople"
+    [pageSize]="pageSize"
+    (page)="onPageChange($event)">
+  </mat-paginator>
+</div>

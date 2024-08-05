@@ -1,0 +1,82 @@
+<mat-card class="character-detail-card" *ngIf="person">
+  <mat-card-header class="character-detail-header">
+    <mat-card-title><h2>character information</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="list-content basic-info">
+    <table>
+      <tr>
+        <td>Name</td>
+        <td> : </td>
+        <td>{{ person.name }}</td>
+      </tr>
+      <tr>
+        <td>Birth Year</td>
+        <td> : </td>
+        <td>{{ person.birth_year }}</td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td> : </td>
+        <td>{{ person.gender }}</td>
+      </tr>
+      <tr>
+        <td>Height</td>
+        <td> : </td>
+        <td>{{ person.height }}</td>
+      </tr>
+      <tr>
+        <td>Weight</td>
+        <td> : </td>
+        <td>{{ person.mass }}</td>
+      </tr>
+    </table>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="character-detail-card">
+  <mat-card-header class="character-detail-header">
+    <mat-card-title><h2>films</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="list-content">
+    <ul>
+      <li *ngFor="let film of films">{{ film.title }}</li>
+      <li *ngIf="!films.length">No Films</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="character-detail-card">
+  <mat-card-header class="character-detail-header">
+    <mat-card-title><h2>species</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="list-content">
+    <ul>
+      <li *ngFor="let species of species">{{ species.name }}</li>
+      <li *ngIf="!species.length">Undefined Species</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="character-detail-card">
+  <mat-card-header class="character-detail-header">
+    <mat-card-title><h2>starships</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="list-content">
+    <ul>
+      <li *ngFor="let starship of starships">{{ starship.name }}</li>
+      <li *ngIf="!starships.length">No Starship</li>
+    </ul>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="character-detail-card">
+  <mat-card-header class="character-detail-header">
+    <mat-card-title><h2>vehicles</h2></mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="list-content">
+    <ul>
+      <li *ngFor="let vehicle of vehicles">{{ vehicle.name }}</li>
+      <li *ngIf="!vehicles.length">No Vehicles</li>
+    </ul>
+  </mat-card-content>
+</mat-card>

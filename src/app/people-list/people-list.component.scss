@@ -1,0 +1,47 @@
+.character-title {
+  color: #ffe81f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Star Jedi Hollow', sans-serif;
+  font-size: 2rem;
+}
+
+.character-list-card {
+  background: transparent;
+
+  .character-list-item {
+    background-color: #000;
+    border: 1px solid #ffe81f;
+    margin: 15px 0px 15px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      color: #ffe81f;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.character-list-paginator {
+  background: #000;
+  border: 1px solid #ffe81f;
+  color: #ffe81f;
+}
+
+::ng-deep .mat-mdc-paginator-icon {
+  fill: #ffe81f !important;
+}
+
+::ng-deep .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon {
+  fill: #C4B214 !important;
+}
+
+
+

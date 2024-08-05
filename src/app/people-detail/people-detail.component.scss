@@ -1,0 +1,28 @@
+.character-detail-card {
+  margin-bottom: 20px;
+  background: #000;
+  color: #ffe81f;
+  border: 1px solid #ffe81f;
+  border-radius: 4px;
+
+  .character-detail-header {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: #ffe81f;
+      font-size: 1.6rem;
+      font-family: 'Star Jedi Hollow', sans-serif;
+    }
+  }
+
+  .list-content {
+    font-size: 16px;
+  }
+
+  .list-content.basic-info {
+    padding-left: 35px;
+  }
+}
